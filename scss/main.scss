@@ -30,6 +30,13 @@ header {
     width: 256px;
 }
 
+// This gradient text is from https://cssgradient.io/blog/css-gradient-text/.
+.gradient-text {
+    background: linear-gradient(to right, $secondary-color, adjust-color($secondary-color, $red: 150, $blue: 150, $green: -50));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .icons {
     display: inline-block;
     width: 100%;
@@ -54,14 +61,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 main {
+    align-items: center;
     padding: 4rem;
     min-height: calc(100vh - 60px);
+
+    .content {
+        display: block;
+        margin-top: 15vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50vw;
+        background: rgba(lighten($primary-color, 60), $overlay-opacity);
+        padding: 5vh;
+        padding-bottom: 4vh;
+        box-shadow: 5px 5px 2rem black;
+    }
 }
 
 #main-footer {
     text-align: center;
     padding: 1rem;
-    background: darken($primary-color, 10);
+    background: rgba(lighten($primary-color, 40), $overlay-opacity);
     color: set-text-color($primary-color);
     height: 60px;
 }
