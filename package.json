@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "name": "homepage",
+  "description": "responsive homepage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kattoc/Homepage.git"
+  },
+  "author": "Lauri Kimpimäki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kattoc/Homepage/issues"
+  },
+  "homepage": "https://github.com/Kattoc/Homepage#readme"
 }
