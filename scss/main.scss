@@ -1,5 +1,4 @@
 @import 'config.scss';
-@import 'mobile.scss';
 @import 'menu.scss';
 
 * {
@@ -50,13 +49,13 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 
     &.lg-heading {
-        font-size: 6rem;
+        font-size: 6vw;
     }
 
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        font-size: 1.6rem;
+        font-size: 2vw;
     }
 }
 
@@ -67,9 +66,9 @@ main {
 
     .content {
         display: block;
-        margin-top: 15vh;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 20vh;
         width: 50vw;
         background: rgba(lighten($primary-color, 60), $overlay-opacity);
         padding: 5vh;
@@ -84,4 +83,8 @@ main {
     background: rgba(lighten($primary-color, 40), $overlay-opacity);
     color: set-text-color($primary-color);
     height: 60px;
+    font-size: 1.3rem;
+    box-shadow: 5px 5px 2rem black;
 }
+
+@import 'mobile.scss';
